@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Mastery Institute</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        html{
+            scroll-behavior: smooth !important ;
+        }
+        .hidden {
+            display: none;
+        }
+        .block {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <!-- Top header  -->
+    <div class="bg-white text-black py-2">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row justify-between items-center">
+           <!-- Logo  -->
+          <div class="flex items-center mb-2 sm:mb-0">
+            <a href="/">
+              <img src="./assets/logo.png" alt="Web Mastery Institute Logo" class="h-20"/>
+            </a>
+          </div>
+         <!-- Contact Information  -->
+          <div class="flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-4">
+            <!-- Call Us  -->
+            <div class="flex items-center">
+              <p class="font-semibold">Call Us:</p>
+              <p class="ml-2">+91 95884 53702</p>
+            </div>
+  
+            <!-- Email  -->
+            <div class="flex items-center">
+              <p class="font-semibold">Email:</p>
+              <p class="ml-2">rushikeshgbhand@gmail.com</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <!-- navbar  -->
+    <nav class="bg-white shadow bg-gradient-to-r from-sky-400 to-indigo-600">
+        <div class="container px-6 py-4 mx-auto">
+            <div class="lg:flex lg:items-center">
+                <div class="flex items-center justify-between">
+                    <a href="/">
+                        <h2 class="text-white">Web Mastery Institute</h2>
+                    </a>
+
+                    <!-- Mobile menu button -->
+                    <div class="flex lg:hidden">
+                        <button id="menuButton" type="button" class="text-gray-500 dark:text-gray-200 hover:text-gray-600 dark:hover:text-gray-400 focus:outline-none focus:text-gray-600 dark:focus:text-gray-400" aria-label="toggle menu">
+                            <svg id="menuIcon" xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M4 8h16M4 16h16" />
+                            </svg>
+                            <svg id="closeIcon" xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <div id="menu" class="lg:flex lg:items-center hidden">
+                    <!-- Navigation links -->
+                    <div class="flex flex-col text-gray-600 capitalize dark:text-gray-300 lg:flex lg:px-16 lg:-mx-4 lg:flex-row lg:items-center">
+                        <a href="#aboutus" class="mt-2 transition-colors duration-300 transform lg:mt-0 lg:mx-4 hover:text-gray-900 dark:hover:text-gray-200">About Us</a>
+                        <a href="#courses" class="mt-2 transition-colors duration-300 transform lg:mt-0 lg:mx-4 hover:text-gray-900 dark:hover:text-gray-200">Courses</a>
+                        <a href="#services" class="mt-2 transition-colors duration-300 transform lg:mt-0 lg:mx-4 hover:text-gray-900 dark:hover:text-gray-200">Services</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const menuButton = document.getElementById('menuButton');
+            const menu = document.getElementById('menu');
+            const menuIcon = document.getElementById('menuIcon');
+            const closeIcon = document.getElementById('closeIcon');
+
+            menuButton.addEventListener('click', function () {
+                menu.classList.toggle('hidden');
+                menu.classList.toggle('block');
+                menuIcon.classList.toggle('hidden');
+                closeIcon.classList.toggle('hidden');
+            });
+        });
+    </script> 
+
+    <!-- first impo section  -->
+    <div class="flex flex-col-reverse lg:flex-row mx-10 lg:gap-64" id="">
+        <!-- first section -->
+        <div class="mt-16">
+            <h2 class="text-indigo-600 text-2xl">Ready to learn?</h2>
+            <h1 class="text-4xl lg:text-6xl my-5 font-extrabold">CODING AND <br> IT CLASSES</h1>
+            <p class="text-xl">Transform your career with us! <br> IT Training Institute for exceptional learning experience. <br> Join now!</p>
+        </div>
+        <img src="./assets/person.avif" width="500" height="250" alt="error to load image">
+    </div>
+
+    <!-- about section  -->
+    <div class="flex flex-col lg:flex-row my-10 lg:gap-20 mt-16 mx-10" id="aboutus">
+        <img src="./assets/friends.jpg" width="600" height="300" alt="error" class="w-80 h-auto rounded-3xl lg:w-1/2">
+        <div>
+            <h1 class="mt-6 text-indigo-600 text-2xl mb-5">About Web Mastery Institute</h1>
+            <p class="text-3xl font-bold">IT Training Institute</p>
+            <p class="text-xl my-3">We strive to provide you with comprehensive training, cutting-edge resources, and personalized guidance to help you excel in the tech industry. Join us and let us support your journey towards a successful and fulfilling career in IT.</p>
+            <ul class="text-xl list-items">
+                <li>Empowering Your Success with IT Training</li>
+                <li>Top Priority: Your Career Growth</li>
+                <li>Comprehensive IT Training Solutions for Success</li>
+                <li>Unlock Your Potential with Our IT Programs</li>
+            </ul>
+            <a href="#services">
+                <button class="py-3 px-5 mt-5 border-5 rounded-md text-white bg-indigo-700 hover:bg-indigo-600">VIEW OUR SERVICES</button>
+            </a>
+        </div>
+    </div>
+
+    <!-- courses  -->
+    <div  id="courses">
+        <div class="container mx-auto px-4 mt-20" id="courses">
+            <h1 class="text-center text-3xl font-bold mb-10 text-indigo-600">Our Courses</h1>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Web Development Course -->
+                <div class="bg-white p-6 rounded-lg border border-solid border-indigo-600 shadow-lg">
+                    <h2 class="text-xl font-bold mb-4">Web Development Course</h2>
+                    <p class="text-lg">Learn front-end and back-end web development skills including HTML, CSS, JavaScript, React, Node.js, and more.</p>
+                </div>
+
+                <!-- Data Science Course -->
+                <div class="bg-white p-6 rounded-lg border border-solid border-indigo-600 shadow-lg">
+                    <h2 class="text-xl font-bold mb-4">Data Science Course</h2>
+                    <p class="text-lg">Master data analysis and machine learning techniques using Python, Pandas, NumPy, Matplotlib, and scikit-learn.</p>
+                </div>
+
+                <!-- AI Course -->
+                <div class="bg-white p-6 rounded-lg border border-solid border-indigo-600 shadow-lg">
+                    <h2 class="text-xl font-bold mb-4">AI Course</h2>
+                    <p class="text-lg">Explore artificial intelligence concepts and algorithms, including neural networks, deep learning, and natural language processing.</p>
+                </div>
+
+                <!-- Basic of IT Course -->
+                <div class="bg-white p-6 rounded-lg border border-solid border-indigo-600 shadow-lg">
+                    <h2 class="text-xl font-bold mb-4">Basic of IT Course</h2>
+                    <p class="text-lg">Get started with the fundamentals of information technology, covering computer basics, software, and hardware concepts.</p>
+                </div>
+
+                <!-- Basic to Advance in Information Technology Course -->
+                <div class="bg-white p-6 rounded-lg border border-solid border-indigo-600 shadow-lg">
+                    <h2 class="text-xl font-bold mb-4">Basic to Advance in Information Technology Course</h2>
+                    <p class="text-lg">Advance your IT skills from basics to advanced topics, including networking, cybersecurity, databases, and cloud computing.</p>
+                </div>
+
+                <!-- Excel Course -->
+                <div class="bg-white p-6 rounded-lg border border-solid border-indigo-600 shadow-lg">
+                    <h2 class="text-xl font-bold mb-4">Excel Course</h2>
+                    <p class="text-lg">Master Microsoft Excel for data analysis, reporting, and visualization with formulas, functions, and pivot tables.</p>
+                </div>
+
+                <!-- Java Course -->
+                <div class="bg-white p-6 rounded-lg border border-solid border-indigo-600 shadow-lg">
+                    <h2 class="text-xl font-bold mb-4">Java Course</h2>
+                    <p class="text-lg">Learn Java programming language for software development, covering core Java concepts, object-oriented programming, and more.</p>
+                </div>
+
+                <!-- Angular Course -->
+                <div class="bg-white p-6 rounded-lg border border-solid border-indigo-600 shadow-lg">
+                    <h2 class="text-xl font-bold mb-4">Angular Course</h2>
+                    <p class="text-lg">Build modern web applications with Angular framework, covering components, services, routing, and forms.</p>
+                </div>
+
+                <!-- Next.js Course -->
+                <div class="bg-white p-6 rounded-lg border border-solid border-indigo-600 shadow-lg">
+                    <h2 class="text-xl font-bold mb-4">Next.js Course</h2>
+                    <p class="text-lg">Learn Next.js for building server-side rendered and statically generated React applications with ease.</p>
+                </div>
+
+                <!-- React Course -->
+                <div class="bg-white p-6 rounded-lg border border-solid border-indigo-600 shadow-lg">
+                    <h2 class="text-xl font-bold mb-4">React Course</h2>
+                    <p class="text-lg">Master React library for building interactive user interfaces with components, props, state, and hooks.</p>
+                </div>
+
+                <!-- Node.js Course -->
+                <div class="bg-white p-6 rounded-lg border border-solid border-indigo-600 shadow-lg">
+                    <h2 class="text-xl font-bold mb-4">Node.js Course</h2>
+                    <p class="text-lg">Learn server-side JavaScript development with Node.js, Express.js, MongoDB, and RESTful APIs.</p>
+                </div>
+
+                <!-- SQL Course -->
+                <div class="bg-white p-6 rounded-lg border border-solid border-indigo-600 shadow-lg">
+                    <h2 class="text-xl font-bold mb-4">SQL Course</h2>
+                    <p class="text-lg">Master SQL database management and querying skills for data manipulation, retrieval, and analysis.</p>
+                </div>
+
+                <!-- MongoDB Course -->
+                <div class="bg-white p-6 rounded-lg border border-solid border-indigo-600 shadow-lg">
+                    <h2 class="text-xl font-bold mb-4">MongoDB Course</h2>
+                    <p class="text-lg">Explore MongoDB NoSQL database for building scalable and flexible applications with document-oriented data storage.</p>
+                </div>
+
+                <!-- Git Course -->
+                <div class="bg-white p-6 rounded-lg border border-solid border-indigo-600 shadow-lg">
+                    <h2 class="text-xl font-bold mb-4">Git Course</h2>
+                    <p class="text-lg">Master version control and collaboration with Git, covering repository management, branching, merging, and more.</p>
+                </div>
+
+                <!-- GitHub Course -->
+                <div class="bg-white p-6 rounded-lg border border-solid border-indigo-600 shadow-lg">
+                    <h2 class="text-xl font-bold mb-4">GitHub Course</h2>
+                    <p class="text-lg">Learn GitHub for hosting and managing your code repositories, collaboration, and project management.</p>
+                </div>
+
+                <!-- Full Stack Course -->
+                <div class="bg-white p-6 rounded-lg border border-solid border-indigo-600 shadow-lg">
+                    <h2 class="text-xl font-bold mb-4">Full Stack Course</h2>
+                    <p class="text-lg">Become a full-stack developer by learning front-end and back-end technologies, including databases, APIs, and deployment.</p>
+                </div>
+
+                <!-- MERN Stack Course -->
+                <div class="bg-white p-6 rounded-lg border border-solid border-indigo-600 shadow-lg">
+                    <h2 class="text-xl font-bold mb-4">MERN Stack Course</h2>
+                    <p class="text-lg">Master MERN (MongoDB, Express.js, React, Node.js) stack for building modern web applications from scratch.</p>
+                </div>
+
+                <!-- Cyber Security Course -->
+                <div class="bg-white p-6 rounded-lg border border-solid border-indigo-600 shadow-lg">
+                    <h2 class="text-xl font-bold mb-4">Cyber Security Course</h2>
+                    <p class="text-lg">Learn cybersecurity concepts and practices, including ethical hacking, network security, cryptography, and risk management.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- our services  -->
+    <div class="container mx-auto mt-20 px-4" id="services">
+        <h1 class="text-center mt-6 text-2xl font-bold text-indigo-600">Our Services</h1>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-10">
+            <!-- Service 1 -->
+            <div class="bg-white p-6 rounded-lg border border-solid border-indigo-600 shadow-lg">
+                <h2 class="text-2xl font-bold mb-4">Live Project Training</h2>
+                <p class="text-lg">We are Providing Training in all IT Domains in PHP / C / Java / Android / QA / Python / ML and Data Science.</p>
+            </div>
+
+            <!-- Service 2 -->
+            <div class="bg-white p-6 rounded-lg border border-solid border-indigo-600 shadow-lg">
+                <h2 class="text-2xl font-bold mb-4">Web Development Courses</h2>
+                <p class="text-lg">Explore our comprehensive web development courses covering HTML, CSS, JavaScript, React, and more.</p>
+            </div>
+
+            <!-- Service 3 -->
+            <div class="bg-white p-6 rounded-lg border border-solid border-indigo-600 shadow-lg">
+                <h2 class="text-2xl font-bold mb-4">IT Certification Programs</h2>
+                <p class="text-lg">Prepare for industry-recognized IT certifications with our specialized training programs and resources.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- footers -->
+    <footer class="bg-gray-900 text-white py-8 mt-20">
+        <div class="container mx-auto">
+            <div class="flex flex-wrap justify-center">
+                <div class="mx-4 mb-4">
+                    <a href="#courses" class="block text-center hover:text-indigo-500">Courses</a>
+                </div>
+                <div class="mx-4 mb-4">
+                    <a href="#aboutus" class="block text-center hover:text-indigo-500">About</a>
+                </div>
+                <div class="mx-4 mb-4">
+                    <a href="#services" class="block text-center hover:text-indigo-500">Services</a>
+                </div>
+            </div>
+            <div class="mt-8 text-center">
+                <p>&copy; <script>document.write(new Date().getFullYear())</script> Web Mastery Institute. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
