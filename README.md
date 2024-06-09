@@ -2,7 +2,7 @@
 
 Welcome to **Web Mastery Institute**! Our static website, crafted with plain HTML, CSS, and JavaScript, is your gateway to a world of IT training and career transformation.
 
-![Landing Page](./path/to/landingpage.png)
+![Landing Page]
 
 ## 📞 Contact Us
 
@@ -86,7 +86,7 @@ HTML, CSS, JavaScript, React, and more.
 ### 🏅 IT Certification Programs
 Specialized training for industry-recognized IT certifications.
 
-![Projects Page](./path/to/projects.png)
+![Projects Page]
 
 ## 📸 Screenshots
 
